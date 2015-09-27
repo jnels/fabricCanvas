@@ -4,8 +4,19 @@ var printText;
 var $userText="";
 var canvas = new fabric.Canvas('poetryCanvas', {
     isDrawingMode: true
-		ctx.lineWidth: 15;
   });
+var drawColor;
+
+$(".controls").on("click", "li", function(){
+  //Deselect sibling elements
+	$(this).siblings().removeClass("selected");
+  //Select clicked element
+  $(this).addClass("selected")
+  drawColor = $(".selected").css("background-color");
+	canvas.freeDrawingBrush.color = drawColor;
+});
+
+canvas.freeDrawingBrush.width = 10;
 
 //Allow user to add text to canvas
 $("#submit").click(function(){
@@ -19,13 +30,6 @@ $("#submit").click(function(){
 	//Hide form, show new button
 	$("#form").hide();
 	$("#addNew").css("display","block");
-	
-  isDrawingMode: true;
-
-
-	poetryCanvas.freeDrawingBrush.color = "purple";
-	poetryCanvas.freeDrawingBrush.width = 10;
-
 });
 
 //Clear fields to allow new text. Also clear canvas.

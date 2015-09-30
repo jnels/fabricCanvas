@@ -1,4 +1,46 @@
+#inputText {
+	position: absolute;
+	font-size: 14px;
+	width: 320px;
+	height: 320px;
+	left: 1%;
+	top: 1%;
+}
+
+#addNew {
+	display: none;
+	position: absolute;
+	top: 340px;
+	left: 10px;
+}
+
+#submit {
+	position: absolute;
+	top: 340px;
+	left: 10px;
+}
+
+#saveCanvas {
+	position: absolute;
+	top: 340px;
+	left: 100px;
+}
+
+#poetryCanvas {
+	position: absolute;
+	top: 1%;
+	left: 1%;
+}
+
+#poems {
+	position: absolute;
+	right: 5%;
+	top: 5%;
+}
+
+/*Canvas Color Select*/
 .controls {
+	display: none;
 	min-height: 60px;
 	margin: 0 auto;
 	width: 600px;
@@ -15,7 +57,7 @@ ul {
 	text-align: center;
 }
 
-ul li {
+.controls ul li{
 	display: inline-block;
 	margin: 0 5px 10px;
 	height: 54px;
@@ -34,6 +76,6 @@ ul li {
 	background: #fff;
 }
 
-.transparent {
-	background: transparent;
+.erase {
+	
 }

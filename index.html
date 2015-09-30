@@ -4,31 +4,41 @@
 		<link rel="stylesheet" href="canvas.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	</head>
 	<body>
-		<canvas id="poetryCanvas" width="500" height="300"></canvas>
 		
-<!--Text input-->
-	<form id="form">
-		<textarea id="inputText"></textarea>
-		<button id="submit" type="button">Submit</button>
-	</form>
-<!--Clear and add new text-->
-		<button type=button id="addNew">New</button>
-		
-		<div class="controls">
+<!--
+		<div id=poems></div>
 			<ul>
-				<li class="black selected"></li>
-				<li class="white"></li>
-				<li class="erase"></li>
+				<li class=.selectedPoem>Ashes, Ashes</li>
+				<li>The Drinking Hole</li>
+				<li>The Body Washer</li>
 			</ul>
 		</div>
+-->
 	
-<div id="canvasContainer">
-<!--Text output-->
-	<p id = outputText></p>
+		<canvas id="poetryCanvas"></canvas>
 		
-<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="fabric.js"></script>
-<script src="draw.js"></script>
-	
-</body>
+<!--Text input-->
+	<div id="canvasContainer">
+		<form id="form">
+			<textarea id="inputText"></textarea>
+			<button id="submit" type="button">Submit</button>
+		</form>
+
+	<!--Clear and add new text-->
+		<button type=button id="addNew">New</button>
+		<button type=button id="saveCanvas">Save</button>
+
+		<div class="controls">
+			<ul>
+				<li class="black selectedColor"></li>
+				<li class="white"></li>
+	<!--				<li class="erase"></li>-->
+			</ul>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="fabric.js"></script>
+	<script src="draw.js"></script>
+	</body>
 </html>	
